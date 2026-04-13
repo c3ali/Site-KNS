@@ -866,10 +866,27 @@ img {
     opacity: 0.3;
 }
 
-.refs-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.refs-carousel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.refs-wrapper {
+    flex: 1;
+    overflow: hidden;
+    max-width: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+}
+
+.refs-track {
+    display: flex;
     gap: 20px;
+    transition: transform 0.4s ease;
+    flex-wrap: nowrap;
 }
 
 .ref-card {
@@ -884,6 +901,8 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 140px;
+    min-width: 200px;
+    flex-shrink: 0;
 }
 
 .ref-card:hover {
@@ -911,6 +930,32 @@ img {
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-light);
+    border: 2px solid var(--accent-2);
+    color: var(--accent-2);
+    cursor: pointer;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 /* ─── Contact ─── */
@@ -1091,6 +1136,60 @@ a.contact-value:hover {
     color: #8a95a2;
 }
 
+/* ─── Social Links ─── */
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-light-alt);
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #0077b5;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.btn-linkedin:hover {
+    background: #006097;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
 /* ─── Animations ─── */
 .reveal-up,
 .reveal-left,
@@ -1166,10 +1265,6 @@ a.contact-value:hover {
         grid-template-columns: 1fr 1fr;
         gap: 32px;
     }
-
-    .refs-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
@@ -1239,8 +1334,17 @@ a.contact-value:hover {
         grid-template-columns: 1fr;
     }
 
-    .refs-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .refs-wrapper {
+        max-width: calc(100% - 96px);
+    }
+
+    .refs-carousel {
+        gap: 8px;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
     }
 
     .footer-grid {
@@ -1293,8 +1397,21 @@ a.contact-value:hover {
         justify-content: center;
     }
 
-    .refs-grid {
-        grid-template-columns: 1fr;
+    .refs-wrapper {
+        max-width: calc(100% - 80px);
+    }
+
+    .refs-carousel {
+        gap: 6px;
+    }
+
+    .refs-track {
+        gap: 12px;
+    }
+
+    .ref-card {
+        min-width: 160px;
+        padding: 16px 12px;
     }
 
     .stat-number {

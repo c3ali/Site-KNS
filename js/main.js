@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCounters();
     initContactForm();
     initSectorTabs();
+    initRefsCarousel();
 });
 
 function initNavbar() {
@@ -252,5 +253,61 @@ function initSectorTabs() {
             const target = document.getElementById('sector-' + sector);
             if (target) target.classList.add('active');
         });
+    });
+}
+
+function initRefsCarousel() {
+    const carousel = document.querySelector('.refs-carousel');
+    if (!carousel) return;
+
+    const track = carousel.querySelector('.refs-track');
+    const cards = carousel.querySelectorAll('.ref-card');
+    const prevBtn = carousel.querySelector('.carousel-prev');
+    const nextBtn = carousel.querySelector('.carousel-next');
+
+    let currentIndex = 0;
+    let visibleCards = 4;
+
+    function updateVisibleCards() {
+        if (window.innerWidth <= 480) {
+            visibleCards = 1;
+        } else if (window.innerWidth <= 768) {
+            visibleCards = 2;
+        } else if (window.innerWidth <= 1024) {
+            visibleCards = 3;
+        } else {
+            visibleCards = 4;
+        }
+    }
+
+    function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 20;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= cards.length - visibleCards;
+    }
+
+    updateVisibleCards();
+    updateCarousel();
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < cards.length - visibleCards) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        updateVisibleCards();
+        currentIndex = Math.min(currentIndex, cards.length - visibleCards);
+        updateCarousel();
     });
 }
