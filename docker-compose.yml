@@ -4,3 +4,6 @@ services:
     expose:
       - "80"
     restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.site-kns.loadbalancer.server.port=80"
