@@ -1,12 +1,6 @@
 services:
   web:
     build: .
-    expose:
-      - "80"
+    ports:
+      - "3002:80"
     restart: unless-stopped
-    networks:
-      - dokploy-network
-
-networks:
-  dokploy-network:
-    external: true
