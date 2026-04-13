@@ -893,15 +893,15 @@ img {
     background: #ffffff;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px 20px;
+    padding: 20px 16px;
     text-align: center;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 140px;
-    min-width: 200px;
+    min-height: 120px;
+    min-width: 160px;
     flex-shrink: 0;
 }
 
@@ -913,16 +913,17 @@ img {
 
 .ref-logo-img {
     max-height: 50px;
-    max-width: 120px;
+    max-width: 100px;
     width: auto;
     height: auto;
     object-fit: contain;
     margin-bottom: 10px;
     transition: var(--transition);
+    flex-shrink: 0;
 }
 
 .ref-card:hover .ref-logo-img {
-    transform: scale(1.05);
+    transform: none;
 }
 
 .ref-sector {
