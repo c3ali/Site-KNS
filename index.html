@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K&S Consulting - Cabinet de conseil spécialisé dans la transformation digitale et l'intelligence artificielle. Accompagnement stratégique et exécution technologique.">
+    <title>K&S Consulting | Transformation Digitale & Intelligence Artificielle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="img/logo.png" alt="K&S Consulting" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">Qui sommes-nous</a></li>
+                <li><a href="#savoir-faire" class="nav-link">Notre savoir-faire</a></li>
+                <li><a href="#offres" class="nav-link">Nos offres</a></li>
+                <li><a href="#references" class="nav-link">Références</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="accueil">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Transformation Digitale & Intelligence Artificielle
+            </div>
+            <h1 class="hero-title">
+                De la <span class="text-gradient">stratégie</span> jusqu'à la <span class="text-gradient">livraison</span> des solutions
+            </h1>
+            <p class="hero-subtitle">
+                K&S Consulting accompagne les organisations dans leur modernisation — conseil stratégique et exécution technologique pour des résultats concrets et mesurables.
+            </p>
+            <div class="hero-actions">
+                <a href="#savoir-faire" class="btn btn-primary">
+                    Découvrir notre savoir-faire
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    Nous contacter
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="2018">0</span>
+                    <span class="stat-label">Année de création</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Collaborateurs & experts</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="40">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projets livrés</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Segments de clientèle</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section class="section about" id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal-left">
+                    <span class="section-tag">Qui sommes-nous</span>
+                    <h2 class="section-title">Un partenaire de <span class="text-gradient">confiance</span> pour votre transformation</h2>
+                    <p class="about-text">
+                        K&S Consulting est un cabinet de conseil spécialisé dans la transformation digitale et l'intelligence artificielle, né avec la volonté d'offrir aux organisations un partenaire capable d'accompagner leur modernisation — de la définition de la stratégie jusqu'à la livraison des solutions.
+                    </p>
+                </div>
+                <div class="about-cards reveal-right">
+                    <div class="vcard">
+                        <div class="vcard-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                        </div>
+                        <div class="vcard-number">Vision</div>
+                        <h3>Devenir le partenaire de référence</h3>
+                        <p>Pour les organisations dans leur transformation digitale et leur intégration de l'intelligence artificielle.</p>
+                    </div>
+                    <div class="vcard">
+                        <div class="vcard-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div class="vcard-number">Mission</div>
+                        <h3>Conseil stratégique & exécution technologique</h3>
+                        <p>Accompagner les établissements publics et les entreprises dans leur modernisation, en combinant conseil stratégique et exécution technologique pour des résultats concrets et mesurables.</p>
+                    </div>
+                    <div class="vcard">
+                        <div class="vcard-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="vcard-number">Valeurs</div>
+                        <h3>Les principes qui nous guident</h3>
+                        <p>Intégrité · Respect · Professionnalisme · Innovation responsable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section savoir-faire" id="savoir-faire">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Notre savoir-faire</span>
+                <h2 class="section-title">Les piliers de notre <span class="text-gradient">expertise</span></h2>
+                <p class="section-desc">Une approche complète alliant méthodologie structurée, expertise pluridisciplinaire et maîtrise du digital.</p>
+            </div>
+            <div class="savoir-faire-grid">
+                <div class="sf-card reveal-up" style="--delay: 0">
+                    <div class="sf-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                    </div>
+                    <div class="sf-number">01</div>
+                    <h3>Méthodologie</h3>
+                    <p>Une démarche structurée et éprouvée, fondée sur le Design Thinking et les principes agiles, pour identifier les enjeux de nos clients, co-construire les solutions adaptées et piloter leur mise en œuvre avec rigueur.</p>
+                    <ul class="sf-tags">
+                        <li>Design Thinking</li>
+                        <li>Agilité</li>
+                        <li>Co-construction</li>
+                    </ul>
+                </div>
+                <div class="sf-card reveal-up" style="--delay: 1">
+                    <div class="sf-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <div class="sf-number">02</div>
+                    <h3>Expertise</h3>
+                    <p>Une équipe pluridisciplinaire alliant conseil en management, maîtrise des architectures IA et connaissance approfondie des métiers — au service de chaque mission.</p>
+                    <ul class="sf-tags">
+                        <li>Management</li>
+                        <li>Architectures IA</li>
+                        <li>Métiers</li>
+                    </ul>
+                </div>
+                <div class="sf-card reveal-up" style="--delay: 2">
+                    <div class="sf-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M7 8l3 3-3 3"/><path d="M13 14h3"/></svg>
+                    </div>
+                    <div class="sf-number">03</div>
+                    <h3>Digitalisation</h3>
+                    <p>La capacité à concevoir et déployer des solutions digitales sur mesure — agents IA, workflows intelligents, applications métier — directement intégrées dans les systèmes et processus de nos clients.</p>
+                    <ul class="sf-tags">
+                        <li>Agents IA</li>
+                        <li>Workflows intelligents</li>
+                        <li>Applications métier</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section offres" id="offres">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Nos offres</span>
+                <h2 class="section-title">Une offre adaptée à <span class="text-gradient">chaque secteur</span></h2>
+                <p class="section-desc">Des solutions sur mesure pour chaque type d'organisation, du secteur public aux TPE.</p>
+            </div>
+
+            <div class="sector-tabs" id="sectorTabs">
+                <button class="sector-tab active" data-sector="public">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4M5 21V10.87M19 21V10.87"/></svg>
+                    Secteur Public
+                </button>
+                <button class="sector-tab" data-sector="entreprise">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></svg>
+                    Grandes Entreprises
+                </button>
+                <button class="sector-tab" data-sector="pme">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    PME
+                </button>
+                <button class="sector-tab" data-sector="tpe">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    TPE & Indépendants
+                </button>
+            </div>
+
+            <div class="sector-content active" id="sector-public">
+                <div class="offre-grid">
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            </div>
+                            <h3>Conseil & Stratégie</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Stratégie de transformation digitale</strong> — Vision, feuille de route et plan d'action orientés expérience citoyen & entreprise, intégrant les leviers IA</li>
+                            <li><strong>Diagnostic stratégique & organisationnel</strong> — Audit de maturité digitale, cartographie des processus, identification des gisements de valeur</li>
+                            <li><strong>Définition de feuilles de route IA</strong> — Priorisation des cas d'usage, arbitrages build/buy, planning de déploiement</li>
+                            <li><strong>Schéma Directeur Informatique (SDI)</strong> — Refonte du SI intégrant les nouvelles architectures IA et cloud</li>
+                            <li><strong>Gouvernance & organisation des SI</strong> — Structuration des directions digitales, définition des rôles et responsabilités à l'ère de l'IA</li>
+                            <li><strong>Gestion des risques & conformité</strong> — Cartographie des risques SI, conformité réglementaire, sécurité des données publiques</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8.5 8.5L5 12l3.5 3.5"/><path d="M12 12h9"/><circle cx="20" cy="12" r="2"/></svg>
+                            </div>
+                            <h3>Solutions IA & Automatisation</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Agents IA pour les services publics</strong> — Automatisation des demandes citoyennes, orientation, traitement des dossiers</li>
+                            <li><strong>Workflows intelligents</strong> — Dématérialisation et automatisation des procédures administratives</li>
+                            <li><strong>Dashboards de pilotage</strong> — Tableaux de bord de performance des services publics, suivi des KPIs citoyens</li>
+                            <li><strong>Solutions de souveraineté numérique</strong> — Déploiement LLM on-premise ou cloud souverain, conformité RGPD</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                            </div>
+                            <h3>Développement Spécifique</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Portails citoyens & services en ligne</strong> — Développement de plateformes de services publics numériques</li>
+                            <li><strong>Applications métier sur mesure</strong> — Solutions adaptées aux contraintes réglementaires et organisationnelles du secteur public</li>
+                            <li><strong>Intégrations SI</strong> — Connexion des systèmes existants aux nouvelles solutions IA</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <h3>Capital Humain & Conduite du changement</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Accompagnement au changement digital</strong> — Stratégie d'adoption, communication interne, gestion des résistances</li>
+                            <li><strong>Formations IA & digital</strong> — Montée en compétences des équipes sur les outils IA, culture data, nouveaux usages</li>
+                            <li><strong>Ingénierie de la formation</strong> — Conception de parcours de formation sur mesure, modules e-learning</li>
+                            <li><strong>Référentiels de compétences digitales</strong> — Mise à jour des fiches de poste et compétences à l'ère de l'IA</li>
+                            <li><strong>PMO & pilotage de programmes</strong> — Structuration et suivi des programmes de transformation, coordination des parties prenantes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-content" id="sector-entreprise">
+                <div class="offre-grid">
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            </div>
+                            <h3>Conseil & Stratégie</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Stratégie & feuille de route IA</strong> — Diagnostic de maturité, identification des cas d'usage à fort ROI, plan de déploiement priorisé</li>
+                            <li><strong>Diagnostic stratégique d'activité</strong> — Analyse de positionnement, benchmarks sectoriels, recommandations augmentées par la data</li>
+                            <li><strong>Stratégie d'innovation</strong> — Identification des opportunités IA, veille concurrentielle, construction de l'avantage compétitif</li>
+                            <li><strong>Optimisation organisationnelle</strong> — Refonte des processus et de l'organisation à la lumière des gains apportés par l'IA</li>
+                            <li><strong>Cartographie & refonte des processus</strong> — Identification des processus automatisables, gains de productivité mesurables</li>
+                            <li><strong>Définition & mise en place de KPIs</strong> — Construction de référentiels de performance orientés data</li>
+                            <li><strong>Gestion des risques SI & IA</strong> — Cartographie des risques, politique de sécurité, conformité</li>
+                            <li><strong>Stratégie Supply Chain augmentée</strong> — Diagnostic performance, restructuration logistique, intégration d'IA prédictive</li>
+                            <li><strong>Stratégie Achat</strong> — Optimisation des processus achat, automatisation de la veille fournisseurs</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8.5 8.5L5 12l3.5 3.5"/><path d="M12 12h9"/><circle cx="20" cy="12" r="2"/></svg>
+                            </div>
+                            <h3>Solutions IA & Automatisation</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Agents IA métier</strong> — Agents autonomes pour automatiser des processus complexes (RH, finance, commercial, opérations, juridique…)</li>
+                            <li><strong>Workflows intelligents</strong> — Automatisation des flux métier avec IA intégrée, réduction des tâches à faible valeur ajoutée</li>
+                            <li><strong>Dashboards & aide à la décision</strong> — Tableaux de bord dynamiques connectés à vos données, visualisation temps réel</li>
+                            <li><strong>Microsoft Power Platform</strong> — Applications, flux et automatisations sur l'écosystème Microsoft — connectivité native SAP, Dynamics, SharePoint, Teams</li>
+                            <li><strong>Conseil LLM & cloud souverain</strong> — Choix et déploiement des modèles adaptés à vos contraintes sécurité et performance</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                            </div>
+                            <h3>Développement Spécifique</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Applications métier sur mesure</strong> — Développement d'applications web/mobile répondant à des besoins non couverts par les solutions du marché</li>
+                            <li><strong>Modules & connecteurs spécifiques</strong> — Extensions sur mesure de vos solutions existantes (ERP, CRM, SIRH…)</li>
+                            <li><strong>Intégrations & APIs</strong> — Connexion de vos systèmes entre eux, interopérabilité des données</li>
+                            <li><strong>Solutions data & analytics</strong> — Pipelines de données, entrepôts de données, modèles prédictifs</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <h3>Capital Humain & Conduite du changement</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Conduite du changement</strong> — Accompagnement humain de la transformation, stratégie d'adoption des outils IA</li>
+                            <li><strong>Formations IA & outils digitaux</strong> — Programmes de montée en compétences, e-learning, ateliers pratiques</li>
+                            <li><strong>Politique RH & gestion des compétences</strong> — Adaptation des référentiels métier à l'ère de l'IA, gestion prévisionnelle des emplois</li>
+                            <li><strong>Modèles de rémunération & valorisation du capital humain</strong> — Refonte des grilles intégrant les nouveaux profils digitaux</li>
+                            <li><strong>PMO & pilotage de programmes</strong> — Structuration et gouvernance des programmes de transformation, reporting exécutif</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-content" id="sector-pme">
+                <div class="offre-grid">
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            </div>
+                            <h3>Conseil & Stratégie</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Stratégie & feuille de route IA</strong> — Diagnostic adapté à votre taille, priorisation pragmatique, ROI rapide</li>
+                            <li><strong>Diagnostic organisationnel</strong> — Cartographie des processus, identification des points de friction, recommandations actionnables</li>
+                            <li><strong>Stratégie marketing digital</strong> — Plan marketing augmenté par l'IA, acquisition, fidélisation, automatisation</li>
+                            <li><strong>Optimisation Supply Chain</strong> — Diagnostic et restructuration des flux logistiques et achats</li>
+                            <li><strong>Définition de KPIs & tableaux de bord</strong> — Construction d'un pilotage simple et efficace de votre activité</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8.5 8.5L5 12l3.5 3.5"/><path d="M12 12h9"/><circle cx="20" cy="12" r="2"/></svg>
+                            </div>
+                            <h3>Solutions IA & Automatisation</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Agents & assistants IA métier</strong> — Assistants dédiés (commercial, SAV, RH, comptabilité) prêts à l'emploi et configurables</li>
+                            <li><strong>Workflows automatisés</strong> — Élimination des tâches répétitives, gain de temps opérationnel mesurable</li>
+                            <li><strong>Dashboards de pilotage</strong> — Visualisation claire de vos KPIs, connectée à vos données existantes</li>
+                            <li><strong>Odoo + IA</strong> — Intégration ERP/CRM Odoo et développement de modules spécifiques enrichis par l'IA (ventes, stocks, comptabilité, RH…)</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                            </div>
+                            <h3>Développement Spécifique</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Applications métier sur mesure</strong> — Solutions adaptées à vos processus spécifiques, là où les outils standard ne suffisent pas</li>
+                            <li><strong>Modules Odoo spécifiques</strong> — Développement de fonctionnalités sur mesure dans l'écosystème Odoo</li>
+                            <li><strong>Connecteurs & intégrations</strong> — Connexion de vos outils existants entre eux pour éliminer les ressaisies et silos de données</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <h3>Capital Humain & Conduite du changement</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Accompagnement au changement</strong> — Gestion de l'adoption des nouveaux outils par vos équipes</li>
+                            <li><strong>Formations pratiques IA</strong> — Sessions courtes et opérationnelles pour rendre vos équipes autonomes rapidement</li>
+                            <li><strong>Ingénierie RH</strong> — Référentiels de compétences, politique RH adaptée à votre stade de croissance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-content" id="sector-tpe">
+                <div class="offre-grid">
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            </div>
+                            <h3>Conseil & Stratégie</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Audit express & quick wins IA</strong> — Diagnostic en 1 journée, identification des 3 actions à impact immédiat</li>
+                            <li><strong>Feuille de route simplifiée</strong> — Plan d'action concret, réaliste, dimensionné à vos moyens</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8.5 8.5L5 12l3.5 3.5"/><path d="M12 12h9"/><circle cx="20" cy="12" r="2"/></svg>
+                            </div>
+                            <h3>Solutions IA & Automatisation</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Assistants IA clé en main</strong> — Chatbot métier, assistant commercial ou SAV, configuré sur vos données en quelques jours</li>
+                            <li><strong>Pack automatisation légère</strong> — Connexion de vos outils (Gmail, WhatsApp, Drive, agenda, facturation) via solutions no-code/low-code</li>
+                            <li><strong>Mini-dashboards</strong> — Suivi simple de votre activité sans infrastructure complexe</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                            </div>
+                            <h3>Développement Spécifique</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Micro-applications métier</strong> — Petit outil numérique sur mesure pour répondre à un besoin précis (devis automatisé, suivi client, planning intelligent…)</li>
+                            <li><strong>Site web intelligent</strong> — Site vitrine ou e-commerce avec IA intégrée (chatbot, recommandations, formulaires intelligents)</li>
+                        </ul>
+                    </div>
+                    <div class="offre-card">
+                        <div class="offre-header">
+                            <div class="offre-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <h3>Capital Humain & Formation</h3>
+                        </div>
+                        <ul class="offre-list">
+                            <li><strong>Pack formation IA individuelle</strong> — Session personnalisée pour maîtriser les outils IA utiles à votre activité</li>
+                            <li><strong>Coaching digital</strong> — Accompagnement individuel dans votre montée en compétences digitales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section references" id="references">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Références</span>
+                <h2 class="section-title">Ils nous font <span class="text-gradient">confiance</span></h2>
+                <p class="section-desc">Nous accompagnons des entreprises et établissements de toutes tailles dans leur transformation.</p>
+            </div>
+            <div class="refs-grid reveal-up">
+                <div class="ref-card">
+                    <img src="img/cimat.png" alt="CIMAT" class="ref-logo-img">
+                    <div class="ref-sector">Industrie</div>
+                </div>
+                <div class="ref-card">
+                    <img src="img/tomas-piron.png" alt="Tomas & Piron" class="ref-logo-img">
+                    <div class="ref-sector">BTP</div>
+                </div>
+                <div class="ref-card">
+                    <img src="img/gs-al-maarif.png" alt="GS AL Maarif" class="ref-logo-img">
+                    <div class="ref-sector">Éducation</div>
+                </div>
+                <div class="ref-card">
+                    <img src="img/peculium.png" alt="Peculium" class="ref-logo-img">
+                    <div class="ref-sector">Finance</div>
+                </div>
+                <div class="ref-card">
+                    <img src="img/accuracy.jpg" alt="Accuracy" class="ref-logo-img">
+                    <div class="ref-sector">Conseil</div>
+                </div>
+                <div class="ref-card">
+                    <img src="img/uvgm.jpg" alt="UVGM" class="ref-logo-img">
+                    <div class="ref-sector">BTP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Parlons de votre <span class="text-gradient">projet</span></h2>
+                    <p class="contact-text">Comment pouvons-nous vous aider ? Contactez-nous à tout moment. Notre équipe se fera un plaisir de vous accompagner.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Téléphone</span>
+                                <a href="tel:+212520132878" class="contact-value">+212 5 20 13 28 78</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:contact@knsconsulting.ma" class="contact-value">contact@knsconsulting.ma</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Adresse</span>
+                                <span class="contact-value">11 rue Georges Sand App 7 - Casablanca - Maroc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Envoyer le message
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo-link">
+                        <img src="img/logo.png" alt="K&S Consulting" class="footer-logo-img">
+                    </a>
+                    <p class="footer-desc">Cabinet de conseil spécialisé dans la transformation digitale et l'intelligence artificielle. Votre partenaire de confiance pour la modernisation de votre organisation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">Qui sommes-nous</a></li>
+                        <li><a href="#savoir-faire">Notre savoir-faire</a></li>
+                        <li><a href="#offres">Nos offres</a></li>
+                        <li><a href="#references">Références</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Nos secteurs</h4>
+                    <ul>
+                        <li><a href="#offres">Secteur Public</a></li>
+                        <li><a href="#offres">Grandes Entreprises</a></li>
+                        <li><a href="#offres">PME</a></li>
+                        <li><a href="#offres">TPE & Indépendants</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+212520132878">+212 5 20 13 28 78</a></li>
+                        <li><a href="mailto:contact@knsconsulting.ma">contact@knsconsulting.ma</a></li>
+                        <li>11 rue Georges Sand App 7 - Casablanca - Maroc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 K&S Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
