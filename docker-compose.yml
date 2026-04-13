@@ -4,6 +4,12 @@ services:
     expose:
       - "80"
     restart: unless-stopped
+    networks:
+      - dokploy-network
     labels:
       - "traefik.enable=true"
       - "traefik.http.services.site-kns.loadbalancer.server.port=80"
+
+networks:
+  dokploy-network:
+    external: true
