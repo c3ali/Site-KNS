@@ -470,11 +470,14 @@ img {
 }
 
 /* ─── About ─── */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: start;
+.about-content {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.about-content .section-tag,
+.about-content .section-title {
+    text-align: center;
 }
 
 .about-text {
@@ -482,6 +485,9 @@ img {
     font-size: 16px;
     margin-bottom: 16px;
     line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-text strong {
@@ -489,9 +495,9 @@ img {
 }
 
 .about-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .vcard {
@@ -1216,9 +1222,8 @@ a.contact-value:hover {
         font-size: 13px;
     }
 
-    .about-grid {
+    .about-cards {
         grid-template-columns: 1fr;
-        gap: 40px;
     }
 
     .services-grid {
