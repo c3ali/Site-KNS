@@ -219,13 +219,13 @@ img {
 }
 
 .logo-img {
-    height: 52px;
+    height: 72px;
     width: auto;
     transition: var(--transition);
 }
 
 .navbar.scrolled .logo-img {
-    height: 42px;
+    height: 58px;
 }
 
 .nav-links {
@@ -1089,7 +1089,7 @@ a.contact-value:hover {
 }
 
 .footer-logo-img {
-    height: 44px;
+    height: 60px;
     width: auto;
     margin-bottom: 4px;
 }
